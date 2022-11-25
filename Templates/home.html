@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+</head>
+<body>
+    <h1 class="ui center aligned header"> Form (flipkart & amazon)</h1>
+    <h4> Please enter the valid product name and then enter the submit button. you will see the table containing the prices from 2 websites.
+    </h4>
+    <form method="post">
+        <div class="field">
+            <label>Enter the Product Name</label>
+            <input type="text" name="product_name" placeholder="Enter task..."><br>
+        </div>
+        
+        <input class="ui blue button" name="submit" type="submit" value="submit" >
+    </form>
+    <br>
+    <h2>{{ret_df|safe}}</h2>
+</body>
+</html>
